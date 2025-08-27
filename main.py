@@ -1,4 +1,11 @@
-from oop import Chat 
+import tkinter as tk
+import ui
 
-chat_with_abena = Chat()
-print(chat_with_abena)
+
+app = tk.Tk()
+app.title("Task manager")
+app.geometry("720x480")
+
+ui.show_all_task_frame(app)
+
+app.mainloop()
